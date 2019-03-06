@@ -5,28 +5,21 @@
 # Date Created: 03/02/2019
 #
 
-import regex
+import re
 
 file_name = "test_in.xml"
-out_file_name = "test-out.txt"
+out_file_name = "test_out.txt"
 
 with open(file_name, 'r') as open_text:
     with open(out_file_name, 'w') as open_out_text:
         text = open_text.read()
 
         # Matches all alphabetic strings that are at least 4 characters long and start with ‘sh’
-        text = regex.sub(r'\bsh[a-zA-Z][a-zA-Z]+\b', r'RIGHT!', text)
+        # text = regex.sub(r'\bsh[a-zA-Z][a-zA-Z]+\b', r'RIGHT!', text)
 
-        # Matches all strings with two consecutive repeated words
-        text = regex.sub(r'(\b\w+\b)(\W+\1\b)', r'RIGHT!', text)
+        p = re.compile(r'\d+')
+        p.findall(text)
 
-        # Matches the set of strings made up of ‘a’ and ‘b’ where each ‘a’ has a ‘b’ before and after it.
-        text = regex.sub(r'\b[b]+a[b]+\b', r'RIGHT!', text)
+        print(len(text))
 
-        # Matches all strings that start at the beginning of a line with an integer, and end the line with a word
-        text = regex.sub(r'^[0-9]+.*[a-zA-Z]+$', r'RIGHT!', text)
-
-        # Matches all American phone numbers in many different configurations
-        text = regex.sub(r'\b\+?((\d{3}(-|\.).+)|1\s\d{3}\s|1\(\d{3}\).+|\d{10}\b)', r'RIGHT!', text)
-
-        open_out_text.write(text)
+        print(text)
