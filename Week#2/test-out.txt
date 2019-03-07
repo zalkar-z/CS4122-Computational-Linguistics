@@ -1,0 +1,6 @@
+the
+string
+isn
+t
+implicitly
+segmented
