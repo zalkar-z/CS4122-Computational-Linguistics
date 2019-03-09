@@ -17,35 +17,46 @@ with open(file_name, 'r') as open_text:
     with open(out_file_name, 'w') as open_out_text:
         text = open_text.read().lower()
 
+        # regex substitute for tags
         text = re.sub(r'</.+>|<.+">|<\w+>|<.+/>', '', text)
 
-        # \b[a-z]+\b|\b([a-z]+\'[a-z]+)\b|\b([a-z]+\')|(\'[a-z]+)\b -- for apostrophes
+        # regex substitute for tags in .xml &lt; and &gt;
+        text = re.sub(r'(&lt;|&gt;|<)/.+(&lt;|&gt;|>)|(&lt;|&gt;|<).+"(&lt;|&gt;|>)|(&lt;|&gt;|<)\w+(&lt;|&gt;|>)|(&lt;|&gt;|<).+/(&lt;|&gt;|>)', '', text)
 
-        open_out_text.write(text)
+        # regex substitute for double and triple single apostrophes (quotes)
+        text = re.sub(r'[\']{2,3}', '', text)
 
-        # # eliminate <tags> before and substitude them with "" empty sting"
-        # match_pattern = re.findall(r'\b[a-z]+\b', text) #get the words you need
-        #
-        # # iterates through the array and writes # of occurrences in a dictionary
-        # for word in match_pattern:
-        #     if word in frequency:
-        #         frequency[word] += 1
-        #     else:
-        #         frequency[word] = 1
-        #
-        # # sorts in increasing order based on words frequency, doesn't handle alphabetic comparison
-        # sorted_array = sorted(frequency, key=lambda word: frequency[word])
-        #
-        # # complementary cycle to deal with ties and alphabetic comparison
-        # for i in range(len(sorted_array)):
-        #     for j in range(i+1, len(sorted_array)):
-        #         if frequency[sorted_array[i]] == frequency[sorted_array[j]] and sorted_array[i] < sorted_array[j]:
-        #             sorted_array[i], sorted_array[j] = sorted_array[j], sorted_array[i]
-        #
-        # result = ""
-        #
-        # # iterates through a reversed array and collects results
-        # for i in reversed(range(len(sorted_array))):
-        #     result = result + sorted_array[i] + " " + str(frequency[sorted_array[i]]) + "\n"
-        #
-        # open_out_text.write(result)
+        # regex substitute for end points (full stops at the end or beginning of the word)
+        text = re.sub(r'\.\W|\W\.', ' ', text)
+
+        # print(text)
+
+        # get all three types of apostrophes and the rest of words
+        match_pattern = re.findall(r'[\']?[a-z\.]+[\']?[a-z\.]*[\']?', text)
+
+        # print(match_pattern)
+
+        # iterates through the array and writes # of occurrences in a dictionary
+        for word in match_pattern:
+            if word in frequency:
+                frequency[word] += 1
+            else:
+                frequency[word] = 1
+
+        # sorts in increasing order based on words frequency, doesn't handle alphabetic comparison
+        sorted_array = sorted(frequency, key=lambda word: frequency[word])
+
+        # complementary cycle to deal with ties and alphabetic comparison
+        for i in range(len(sorted_array)):
+            for j in range(i+1, len(sorted_array)):
+                if frequency[sorted_array[i]] == frequency[sorted_array[j]] and sorted_array[i] < sorted_array[j]:
+                    sorted_array[i], sorted_array[j] = sorted_array[j], sorted_array[i]
+
+        result = ""
+
+        # iterates through a reversed array and collects results
+        for i in reversed(range(len(sorted_array))):
+            result = result + sorted_array[i] + " " + str(frequency[sorted_array[i]]) + "\n"
+
+        # write the result
+        open_out_text.write(result)
