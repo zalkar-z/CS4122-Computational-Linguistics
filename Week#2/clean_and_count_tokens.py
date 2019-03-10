@@ -6,10 +6,9 @@
 #
 
 import re
-import operator
 
-file_name = "test_in.xml"
-out_file_name = "test_out.txt"
+file_name = "Wikipedia-LexicalAnalysis.xml"
+out_file_name = "lexical_analysis_out.txt"
 
 frequency = {}
 
@@ -29,12 +28,8 @@ with open(file_name, 'r') as open_text:
         # regex substitute for end points (full stops at the end or beginning of the word)
         text = re.sub(r'\.\W|\W\.', ' ', text)
 
-        # print(text)
-
         # get all three types of apostrophes and the rest of words
         match_pattern = re.findall(r'[\']?[a-z\.]+[\']?[a-z\.]*[\']?', text)
-
-        # print(match_pattern)
 
         # iterates through the array and writes # of occurrences in a dictionary
         for word in match_pattern:
@@ -47,6 +42,7 @@ with open(file_name, 'r') as open_text:
         sorted_array = sorted(frequency, key=lambda word: frequency[word])
 
         # complementary cycle to deal with ties and alphabetic comparison
+        # O(n^2) sorting used here due to the small input. Could be optimized to O(NlogN) if needed.
         for i in range(len(sorted_array)):
             for j in range(i+1, len(sorted_array)):
                 if frequency[sorted_array[i]] == frequency[sorted_array[j]] and sorted_array[i] < sorted_array[j]:
@@ -56,7 +52,7 @@ with open(file_name, 'r') as open_text:
 
         # iterates through a reversed array and collects results
         for i in reversed(range(len(sorted_array))):
-            result = result + sorted_array[i] + " " + str(frequency[sorted_array[i]]) + "\n"
+            result = result + sorted_array[i] + "\t" + str(frequency[sorted_array[i]]) + "\n"
 
         # write the result
         open_out_text.write(result)
