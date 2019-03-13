@@ -18,5 +18,8 @@
 #
 # 1) Read the input file line by line (remember that each line is seperate)
 # 2) Using the greedy MaxMatch algorithm try to find the longest existing word
-# (check from japanese_wordlist.txt, you can just import it as a variable) and keep seperating words by black line as needed
-# 3) Print eveything out
+# (check from japanese_wordlist.txt, you can just import it as a variable)
+# and keep seperating words by black line as needed
+# 3) Print everything out
+# 4) Make a tester to analyze the effectiveness of the tokenizer
+# (hom many lines match, what is the difference in characters, etc)
