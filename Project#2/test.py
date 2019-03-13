@@ -18,5 +18,7 @@ with open(japanese_dictionary, 'r', encoding="utf8") as open_dictionary:
         for line in text:
             newlist.append(line[:len(line) - 1])
 
+        print('ｐＨ調整剤' in (newlist))
+
         for line in newlist:
             open_out_dictionary.write(line + "\n")

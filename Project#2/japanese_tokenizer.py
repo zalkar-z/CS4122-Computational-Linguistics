@@ -5,30 +5,38 @@
 # Date Created: 03/11/2019
 #
 
-# import sys
-#
-# input_file = sys.argv[1]
-# output_file = sys.argv[2]
-#
-#
-# def tokenize(line):
-#
-#
-#
-# with open(input_file, 'r') as open_in:
-#     with open(output_file, 'w') as open_out:
-#         for line in open_in.readlines():
-#             spaced_line = tokenize(line)
-#             open_out.write(spaced_line)
+import sys
 
+input_file = sys.argv[1]
+output_file = sys.argv[2]
 
 japanese_dictionary = "japanese_wordlist.txt"
+    dictionary_out = "dictionary_out.txt"
 
-with open(japanese_dictionary, 'r') as open_dictionary:
+    with open(japanese_dictionary, 'r', encoding="utf8") as open_dictionary:
+        with open(dictionary_out, 'w', encoding="utf8") as open_out_dictionary:
 
-    dictionary = open_dictionary.readlines()
+            text = open_dictionary.readlines()
 
-    print(dictionary)
+            newlist = []
+
+            for line in text:
+                newlist.append(line[:len(line) - 1])
+
+
+def exist_in_dictionary(word):
+    return word in newlist
+
+
+def tokenize(line):
+    # define the loops for the MaxMatch algorithm
+
+
+with open(input_file, 'r') as open_in:
+    with open(output_file, 'w') as open_out:
+        for line in open_in.readlines():
+            spaced_line = tokenize(line)
+            open_out.write(spaced_line)
 
 
 # Notes
