@@ -1,0 +1,22 @@
+ERROR on line #0:
+out.txt				親 に なって こそ 、 親 の 苦労 や 気持ち がわ かる もの だ 。
+golden_standard.txt	親 に なって こそ 、 親 の 苦労 や 気持ち が わかる もの だ 。
+
+ERROR on line #4:
+out.txt				あなた に は 感謝 こそ すれ 、 恨んで など いま せん 。
+golden_standard.txt	あなた に は 感謝 こそ すれ 、 恨んで など い ません 。
+
+ERROR on line #5:
+out.txt				毎朝 ヨ ガ を する ことに しま した 。
+golden_standard.txt	毎朝 ヨガ を する こと に し ました。
+
+ERROR on line #7:
+out.txt				この キ ノ コ は 色 と 形 こそ きれい だ が 、 毒 が あって 食べる こと は でき ない 。
+golden_standard.txt	この キノコ は 色 と 形 こそ きれい だ が 、 毒 が あって 食べる こと は でき ない 。
+
+ERROR on line #8:
+out.txt				そんな こと を する くらい なら 、 死んだ ほう がま しだ 。
+golden_standard.txt	そんな こと を する くらい なら 、 死んだ ほう が まし だ 。
+
+
+Tokenization accuracy is equal to 50.0% or 5/10
