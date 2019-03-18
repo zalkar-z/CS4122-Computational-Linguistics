@@ -8,7 +8,7 @@
 import nltk
 import re
 
-nltk.download('punkt')
+# nltk.download('punkt')
 
 file_name = "Wikipedia-LexicalAnalysis.xml"
 out_file_name = "lexical_analysis_nltk_stemmed_out.txt"
