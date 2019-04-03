@@ -6,7 +6,7 @@
 #
 
 import sys
-import nltk
+import math
 
 # input_file = sys.argv[1]
 # output_file = sys.argv[2]
@@ -14,20 +14,40 @@ import nltk
 input_file = "InputTexts/dickens_training.txt"
 output_file = "output_test.txt"
 
-with open(input_file, 'r') as input_file:
-    with open(output_file, 'w') as output_file:
-        words = input_file.read()
-        words = nltk.word_tokenize(words)
-        words = [word.lower() for word in words]
 
-        frequency = nltk.FreqDist(words)
+def count_unigrams(words):
+    unigrams = {}
 
-        output_file.write(str(frequency.most_common(50)))
+    for line in words:
+        for word in line:
+            if word in unigrams:
+                unigrams[word] += 1
+            else:
+                unigrams[word] = 1
+
+    return unigrams
 
 
+with open(input_file, 'r', encoding="utf8") as input_text:
+    with open(output_file, 'w', encoding="utf8") as output_text:
+        words = input_text.readlines()
 
+        # words = words[:50]
+        for i in range(len(words)):
+            words[i] = words[i].lower()
+            words[i] = "<s> " + words[i] + " </s>"
+            words[i] = words[i].split()
 
+        unigrams = count_unigrams(words)
 
-# bigrams = nltk.bigrams(words)
-# for tuple in bigrams:
-#     output_file.write(str(tuple))
+        unigrams_type = len(unigrams)
+        unigrams_token = 0
+        for word in unigrams:
+            unigrams_token += unigrams[word]
+
+        unigrams = sorted(unigrams.items(), key=lambda x: x[1], reverse=True)
+
+        for item in unigrams:
+            result = str(item[1]) + " " + str(item[1] / unigrams_token) + " " + str(math.log10(item[1] / unigrams_token)) + " " + str(item[0] + "\n")
+            output_text.write(result)
+
