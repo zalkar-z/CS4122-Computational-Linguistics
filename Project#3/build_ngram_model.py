@@ -28,26 +28,60 @@ def count_unigrams(words):
     return unigrams
 
 
+def count_bigrams(words):
+    bigrams = {}
+
+    for line in words:
+        for i in range(1, len(line)):
+            first_word = line[i - 1]
+            second_word = line[i]
+
+            if first_word not in bigrams:
+                bigrams[first_word] = {}
+                bigrams[first_word][second_word] = 1
+            else:
+                if second_word not in bigrams[first_word]:
+                    bigrams[first_word][second_word] = 1
+                else:
+                    bigrams[first_word][second_word] += 1
+
+    return bigrams
+
+
 with open(input_file, 'r', encoding="utf8") as input_text:
     with open(output_file, 'w', encoding="utf8") as output_text:
         words = input_text.readlines()
 
-        # words = words[:50]
+        words = words[:3]
+
         for i in range(len(words)):
             words[i] = words[i].lower()
             words[i] = "<s> " + words[i] + " </s>"
             words[i] = words[i].split()
 
-        unigrams = count_unigrams(words)
+        # unigrams = count_unigrams(words)
+        #
+        # unigrams_type = len(unigrams)
+        # unigrams_token = 0
+        # for word in unigrams:
+        #     unigrams_token += unigrams[word]
+        #
+        # unigrams = sorted(unigrams.items(), key=lambda x: x[1])
+        #
+        # for i in reversed(range(len(unigrams))):
+        #     item = unigrams[i]
+        #     result = str(item[1]) + " " + str(item[1] / unigrams_token) + " " + str(math.log10(item[1] / unigrams_token)) + " " + str(item[0] + "\n")
+        #     output_text.write(result)
 
-        unigrams_type = len(unigrams)
-        unigrams_token = 0
-        for word in unigrams:
-            unigrams_token += unigrams[word]
+        bigrams = count_bigrams(words)
 
-        unigrams = sorted(unigrams.items(), key=lambda x: x[1], reverse=True)
+        # my_list = sorted(bigrams, key=lambda x: (bigrams[x][x]))
 
-        for item in unigrams:
-            result = str(item[1]) + " " + str(item[1] / unigrams_token) + " " + str(math.log10(item[1] / unigrams_token)) + " " + str(item[0] + "\n")
-            output_text.write(result)
+
+
+        # print(my_list)
+
+
+
+
 

@@ -2,57 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4880c53-ef59-4916-bcf7-f4cb4ff19763" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/MyGitHub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyGitHub.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project#1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project#1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project#3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project#3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project#3/build_ngram_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project#3/build_ngram_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project#3/output_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project#3/output_test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1244718546">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.112" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.33" value="1" />
-          <entry key="project.opened" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="11" />
-          <entry key="txt" value="34" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PLAIN_TEXT" value="34" />
-          <entry key="Python" value="11" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Python Console" value="19" />
-          <entry key="py" value="6023" />
-          <entry key="txt" value="47" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="47" />
-          <entry key="Python" value="6042" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="MyGitHub" />
@@ -62,11 +24,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project#3/build_ngram_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="446">
+              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="e#168#178#0" expanded="true" />
-                <marker date="1554314438997" expanded="true" signature="355:569" ph="..." />
               </folding>
             </state>
           </provider>
@@ -75,35 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project#3/InputTexts/dickens_training.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1469">
+            <state relative-caret-position="744">
               <caret line="113972" column="66" selection-start-line="113972" selection-start-column="66" selection-end-line="113972" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project#3/output_test.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4097">
-              <caret line="241" column="50" lean-forward="true" selection-start-line="241" selection-start-column="50" selection-end-line="241" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project#3/test.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3740">
-              <caret line="220" column="6" lean-forward="true" selection-start-line="220" selection-start-column="6" selection-end-line="220" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project#3/checker.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -111,9 +45,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project#3/Examples/dickens_model.txt">
           <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="105">
               <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project#3/output_test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-90" />
           </provider>
         </entry>
       </file>
@@ -133,9 +74,13 @@
       <find>.</find>
       <find>ye-ye-ye-yes</find>
       <find>painful</find>
-      <find>heard</find>
       <find>painful.</find>
+      <find>heard</find>
+      <find>word_dictionary</find>
     </findStrings>
+    <replaceStrings>
+      <replace>bigrams</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -151,14 +96,15 @@
         <option value="$PROJECT_DIR$/Project#2/japanese_tokenizer.py" />
         <option value="$PROJECT_DIR$/Project#1/nltk_clean_and_count_stems.py" />
         <option value="$PROJECT_DIR$/Project#3/examples/win/InputTexts/shakespeare.txt" />
-        <option value="$PROJECT_DIR$/Project#3/build_ngram_model.py" />
         <option value="$PROJECT_DIR$/Project#3/test.txt" />
+        <option value="$PROJECT_DIR$/test/test.py" />
         <option value="$PROJECT_DIR$/Project#3/output_test.txt" />
         <option value="$PROJECT_DIR$/Project#3/checker.py" />
+        <option value="$PROJECT_DIR$/Project#3/build_ngram_model.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1366" />
     <option name="height" value="768" />
   </component>
@@ -170,27 +116,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="MyGitHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyGitHub" type="462c0819:PsiDirectoryNode" />
+              <item name="Computational_Linguistics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Computational_Linguistics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyGitHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyGitHub" type="462c0819:PsiDirectoryNode" />
+              <item name="Computational_Linguistics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Computational_Linguistics" type="462c0819:PsiDirectoryNode" />
               <item name="Project#3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -204,7 +151,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.checker (1)">
+  <component name="RunManager" selected="Python.build_ngram_model">
     <configuration name="build_ngram_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyGitHub" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -268,27 +215,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="japanese_tokenizer" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MyGitHub" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project#2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project#2/japanese_tokenizer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="nltk_clean_and_count_stems" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyGitHub" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -310,20 +236,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MyGitHub" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.japanese_tokenizer" />
       <item itemvalue="Python.checker" />
       <item itemvalue="Python.nltk_clean_and_count_stems" />
       <item itemvalue="Python.build_ngram_model" />
       <item itemvalue="Python.checker (1)" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.checker (1)" />
         <item itemvalue="Python.build_ngram_model" />
+        <item itemvalue="Python.checker (1)" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.nltk_clean_and_count_stems" />
         <item itemvalue="Python.checker" />
-        <item itemvalue="Python.japanese_tokenizer" />
       </list>
     </recent_temporary>
   </component>
@@ -341,14 +288,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.499002" visible="true" weight="0.18147591" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.499002" visible="true" weight="0.12848867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.500998" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31896552" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5709779" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30396038" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -362,17 +310,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/python/Lib/encodings/cp1251.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/python/Lib/encodings/cp1251.py" />
     <entry file="file://$PROJECT_DIR$/Project#2/dictionary_out.txt" />
     <entry file="file://$PROJECT_DIR$/Project#2/test.py" />
     <entry file="file://$PROJECT_DIR$/Project#2/my_in.txt" />
@@ -445,26 +384,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project#3/Examples/win/InputTexts/dickens_training.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project#3/Examples/win/Examples/dickens_model.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="170">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project#3/Examples/win/Examples/dickens_generated.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project#3/Examples/win/InputTexts/shakespeare.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project#3/Examples/win/InputTexts/dickens_training.txt" />
+    <entry file="file://$PROJECT_DIR$/Project#3/Examples/win/Examples/dickens_model.txt" />
+    <entry file="file://$PROJECT_DIR$/Project#3/Examples/win/Examples/dickens_generated.txt" />
+    <entry file="file://$PROJECT_DIR$/Project#3/Examples/win/InputTexts/shakespeare.txt" />
     <entry file="file://$PROJECT_DIR$/Project#3/Examples/dickens_generated.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -482,48 +405,52 @@
     <entry file="file://$PROJECT_DIR$/Project#3/InputTexts/dickens_test.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project#3/Examples/dickens_model.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project#3/checker.py">
+    <entry file="file://$PROJECT_DIR$/test/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="75">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project#3/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3740">
-          <caret line="220" column="6" lean-forward="true" selection-start-line="220" selection-start-column="6" selection-end-line="220" selection-end-column="6" />
+        <state relative-caret-position="338">
+          <caret line="220" column="6" selection-start-line="220" selection-start-column="6" selection-end-line="220" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project#3/checker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project#3/output_test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4097">
-          <caret line="241" column="50" lean-forward="true" selection-start-line="241" selection-start-column="50" selection-end-line="241" selection-end-column="50" />
-        </state>
+        <state relative-caret-position="-90" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project#3/InputTexts/dickens_training.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1469">
+        <state relative-caret-position="744">
           <caret line="113972" column="66" selection-start-line="113972" selection-start-column="66" selection-end-line="113972" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project#3/Examples/dickens_model.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project#3/build_ngram_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="446">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
           <folding>
             <element signature="e#168#178#0" expanded="true" />
-            <marker date="1554314438997" expanded="true" signature="355:569" ph="..." />
           </folding>
         </state>
       </provider>
