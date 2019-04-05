@@ -3,6 +3,7 @@
     <words>
       <w>bigram</w>
       <w>bigrams</w>
+      <w>unigram</w>
     </words>
   </dictionary>
 </component>
