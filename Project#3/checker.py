@@ -3,7 +3,7 @@
 
 
 first = "output_test.txt"
-second = "test.txt"
+second = "Examples/dickens_model.txt"
 
 with open(first, 'r', encoding="utf8") as first_text:
     with open(second, 'r', encoding="utf8") as second_text:

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4880c53-ef59-4916-bcf7-f4cb4ff19763" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/MyGitHub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyGitHub.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/zalkar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/zalkar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project#3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project#3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project#3/build_ngram_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project#3/build_ngram_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project#3/checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project#3/checker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project#3/output_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project#3/output_test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
     </list>
@@ -21,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project#3/build_ngram_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="187">
+              <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
               <folding>
                 <element signature="e#168#178#0" expanded="true" />
               </folding>
@@ -33,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project#3/InputTexts/dickens_training.txt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="113972" column="66" selection-start-line="113972" selection-start-column="66" selection-end-line="113972" selection-end-column="66" />
+            <state relative-caret-position="75">
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -45,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project#3/Examples/dickens_model.txt">
           <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="105">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="30">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -54,7 +53,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project#3/output_test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90" />
+            <state relative-caret-position="120">
+              <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project#3/checker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -75,11 +85,22 @@
       <find>ye-ye-ye-yes</find>
       <find>painful</find>
       <find>painful.</find>
-      <find>heard</find>
       <find>word_dictionary</find>
+      <find>bigrams</find>
+      <find>1</find>
+      <find>3</find>
+      <find>2</find>
+      <find>make</find>
+      <find>unigrams</find>
+      <find>house</find>
+      <find>hou</find>
+      <find>heard</find>
+      <find>house</find>
     </findStrings>
     <replaceStrings>
       <replace>bigrams</replace>
+      <replace>bigrams_nested</replace>
+      <replace>ugrams</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -97,16 +118,16 @@
         <option value="$PROJECT_DIR$/Project#1/nltk_clean_and_count_stems.py" />
         <option value="$PROJECT_DIR$/Project#3/examples/win/InputTexts/shakespeare.txt" />
         <option value="$PROJECT_DIR$/Project#3/test.txt" />
-        <option value="$PROJECT_DIR$/test/test.py" />
         <option value="$PROJECT_DIR$/Project#3/output_test.txt" />
         <option value="$PROJECT_DIR$/Project#3/checker.py" />
+        <option value="$PROJECT_DIR$/test/test.py" />
         <option value="$PROJECT_DIR$/Project#3/build_ngram_model.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -116,7 +137,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,10 +149,16 @@
               <item name="Computational_Linguistics" type="462c0819:PsiDirectoryNode" />
               <item name="Project#3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Computational_Linguistics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Computational_Linguistics" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,8 +293,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.build_ngram_model" />
-        <item itemvalue="Python.checker (1)" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.checker (1)" />
         <item itemvalue="Python.nltk_clean_and_count_stems" />
         <item itemvalue="Python.checker" />
       </list>
@@ -291,12 +317,12 @@
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.499002" visible="true" weight="0.12848867" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.499002" visible="true" weight="0.12848867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.500998" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31896552" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30396038" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25148514" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -405,53 +431,55 @@
     <entry file="file://$PROJECT_DIR$/Project#3/InputTexts/dickens_test.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.py">
+    <entry file="file://$PROJECT_DIR$/Project#3/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        <state relative-caret-position="224">
+          <caret line="220" column="6" selection-start-line="220" selection-start-column="6" selection-end-line="220" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project#3/test.txt">
+    <entry file="file://$PROJECT_DIR$/Project#3/InputTexts/dickens_training.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="220" column="6" selection-start-line="220" selection-start-column="6" selection-end-line="220" selection-end-column="6" />
+        <state relative-caret-position="522">
+          <caret line="113972" column="66" selection-start-line="113972" selection-start-column="66" selection-end-line="113972" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project#3/checker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project#3/output_test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project#3/InputTexts/dickens_training.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="113972" column="66" selection-start-line="113972" selection-start-column="66" selection-end-line="113972" selection-end-column="66" />
+        <state relative-caret-position="120">
+          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project#3/Examples/dickens_model.txt">
       <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project#3/build_ngram_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="187">
+          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding>
             <element signature="e#168#178#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
