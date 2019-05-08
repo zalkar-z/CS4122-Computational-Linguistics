@@ -31,9 +31,21 @@ import os
 # should_normalize = sys.argv[5]
 # similarity_type = sys.argv[6]
 
-vector_file = "files/smaller_model.txt"
+vector_file = "smaller_model.txt"
+vector_file_size = 773  # number of words in smaller_model.txt
+
+vectors = []
 
 with open(vector_file, 'r') as open_file:
     for line in open_file.readlines():
-        print(line)
+        # splits a string by whitespaces and converts to a list
+        temp_list = line.split()
+        # save the first one as word
+        vector_word = temp_list[0]
+        # the rest is list of vector
+        vector_list = temp_list[1:]
+        # append to a global list of vector dictionaries
+        vectors.append({vector_word: vector_list})
+        break
+
 
