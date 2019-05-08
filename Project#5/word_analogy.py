@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 
+import sys
+import os
 #
 # This is an examples of reading files from directory using sys and Python
-#
-# import sys
-# import os
 #
 # dir_name = sys.arg[1]
 #
@@ -23,3 +22,18 @@
 #     with open(file_path, 'r') as open_file:
 #         for line in open_file.readlines():
 #             print(line)
+
+# command line readings
+# vector_file = sys.argv[1]
+# input_directory = sys.argv[2]
+# output_directory = sys.argv[3]
+# eval_file = sys.argv[4]
+# should_normalize = sys.argv[5]
+# similarity_type = sys.argv[6]
+
+vector_file = "files/smaller_model.txt"
+
+with open(vector_file, 'r') as open_file:
+    for line in open_file.readlines():
+        print(line)
+

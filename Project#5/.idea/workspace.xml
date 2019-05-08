@@ -3,6 +3,39 @@
   <component name="ChangeListManager">
     <list default="true" id="39b0ffcb-7784-4a8c-9d1c-b30af84b4160" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/capital-common-countries.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/capital-world.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/city-in-state.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/currency.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/family.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/gram1-adjective-to-adverb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/gram2-opposite.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/gram3-comparative.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/gram4-superlative.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/gram5-present-participle.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/gram6-nationality-adjective.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/gram7-past-tense.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/gram8-plural.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/GoogleTestSet/gram9-plural-verbs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._capital-common-countries.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._capital-world.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._city-in-state.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._currency.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._family.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._gram1-adjective-to-adverb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._gram2-opposite.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._gram3-comparative.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._gram4-superlative.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._gram5-present-participle.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._gram6-nationality-adjective.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._gram7-past-tense.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._gram8-plural.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/GoogleTestSet/__MACOSX/GoogleTestSet/._gram9-plural-verbs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/sample_eval.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/smaller_model.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/vectormodel.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/word_analogy.py" beforeDir="false" afterPath="$PROJECT_DIR$/word_analogy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test/test.py" afterDir="false" />
@@ -33,12 +66,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="558" />
+          <entry key="py" value="837" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="558" />
+          <entry key="Python" value="837" />
         </counts>
       </usages-collector>
     </session>
@@ -48,8 +81,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/word_analogy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
+            <state relative-caret-position="467">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#24#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,8 +192,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/word_analogy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
+        <state relative-caret-position="467">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
