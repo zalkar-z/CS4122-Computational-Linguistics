@@ -36,10 +36,28 @@ vector_file = "smaller_model.txt"
 vector_file_size = 773  # number of words in smaller_model.txt
 input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet'
 output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output'
+should_normalize = 1
+
 
 vectors = {}  # a global dictionary for vectors
 
 
+#
+# Function: calculates the magnitude of a given vector.
+# Return:   A magnitude of a given vector.
+#
+def magnitude_of_vector(vector):
+    magnitude = 0
+    for i in range(len(vector)):
+        magnitude += vector[i] * vector[i]
+
+    return magnitude
+
+
+#
+# Function: Normalizes vectors of given words in an array.
+# Return:   Nothing.
+#
 def normalize_vectors(words):
     for word in words:
         magnitude = magnitude_of_vector(vectors[word])
@@ -60,35 +78,40 @@ def solve(line):
         normalize_vectors([first_pair[0], first_pair[1], second_pair[0]])
 
 
+# # Step:1 - reading vectors
+# with open(vector_file, 'r') as open_file:
+#     for line in open_file.readlines():
+#         # splits a string by whitespaces and converts to a list
+#         temp_list = line.split()
+#         # save the first one as word
+#         vector_word = temp_list[0]
+#         # the rest is list of vector
+#         vector_list = temp_list[1:]
+#         # add to the global dictionary
+#         vectors[vector_word] = list(map(float, vector_list))
+#
+# # Step:2 - read tests
+# for filename in os.listdir(input_directory):
+#     # skip hidden files
+#     if filename.startswith('.'):
+#         continue
+#     # skip everything NOT .txt
+#     if not filename.endswith('.txt'):
+#         continue
+#     # join directory path with file path to get the whole address
+#     input_filepath = os.path.join(input_directory, filename)
+#     output_filepath = os.path.join(output_directory, filename)
+#
+#     # read from file
+#     with open(input_filepath, 'r') as input_file:
+#         with open(output_filepath, 'w') as output_file:
+#             for line in input_file.readlines():
+#                 output_file.write(solve(line))
+#
+
+def main():
 
 
-# Step:1 - reading vectors
-with open(vector_file, 'r') as open_file:
-    for line in open_file.readlines():
-        # splits a string by whitespaces and converts to a list
-        temp_list = line.split()
-        # save the first one as word
-        vector_word = temp_list[0]
-        # the rest is list of vector
-        vector_list = temp_list[1:]
-        # add to the global dictionary
-        vectors[vector_word] = list(map(float, vector_list))
 
-# Step:2 - read tests
-for filename in os.listdir(input_directory):
-    # skip hidden files
-    if filename.startswith('.'):
-        continue
-    # skip everything NOT .txt
-    if not filename.endswith('.txt'):
-        continue
-    # join directory path with file path to get the whole address
-    input_filepath = os.path.join(input_directory, filename)
-    output_filepath = os.path.join(output_directory, filename)
-
-    # read from file
-    with open(input_filepath, 'r') as input_file:
-        with open(output_filepath, 'w') as output_file:
-            for line in input_file.readlines():
-                output_file.write(solve(line))
-
+if __name__ == "__main__":
+    main()
