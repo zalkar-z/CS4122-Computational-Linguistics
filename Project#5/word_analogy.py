@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+#
+# word_analogy.py - Computational Linguistics Project#5
+# Author: Zak Ziiaidin uulu (zalkar@bennington.edu)
+# Date Created: 05/09/2019
+#
 
 import sys
 import os
