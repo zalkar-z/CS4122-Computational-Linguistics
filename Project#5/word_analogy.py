@@ -43,6 +43,29 @@ vectors = {}  # a global dictionary for vectors
 
 
 #
+# Function: Adds two vectors of the same length
+# Return:   Summarized vector.
+#
+def vector_sum(first, second):
+    result = []
+    for i in range(len(first)):
+        result.append(first[i] + second[i])
+
+    return result
+
+
+#
+# Function: Subtracts two vectors of the same length
+# Return:   Subtracted vector.
+#
+def vector_difference(first, second):
+    result = []
+    for i in range(len(first)):
+        result.append(first[i] - second[i])
+
+    return result
+
+#
 # Function: calculates the magnitude of a given vector.
 # Return:   A magnitude of a given vector.
 #
@@ -76,6 +99,14 @@ def solve(line):
     # handling normalization
     if should_normalize:
         normalize_vectors([first_pair[0], first_pair[1], second_pair[0]])
+
+    # handling vector addition and subtraction
+    summary_vector = vector_sum(second_pair[0], first_pair[1])
+    summary_vector = vector_difference(summary_vector, first_pair[0])
+
+    # handling similarity metrics
+    
+
 
 
 # # Step:1 - reading vectors
