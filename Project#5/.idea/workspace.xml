@@ -4,8 +4,9 @@
     <list default="true" id="39b0ffcb-7784-4a8c-9d1c-b30af84b4160" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/capital-common-countries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/capital-common-countries.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/gram1-adjective-to-adverb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram1-adjective-to-adverb.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/gram3-comparative.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram3-comparative.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/capital-world.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/capital-world.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/city-in-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/city-in-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/currency.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/currency.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/word_analogy.py" beforeDir="false" afterPath="$PROJECT_DIR$/word_analogy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,23 +26,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="py" value="2" />
-          <entry key="txt" value="3" />
+          <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4430" />
+          <entry key="py" value="4572" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4430" />
+          <entry key="Python" value="4572" />
         </counts>
       </usages-collector>
     </session>
@@ -51,16 +52,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/word_analogy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="198" column="8" selection-start-line="198" selection-start-column="8" selection-end-line="198" selection-end-column="8" />
+            <state relative-caret-position="369">
+              <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
               <folding>
                 <element signature="e#163#173#0" expanded="true" />
-                <marker date="1557599468274" expanded="true" signature="1583:1936" ph="..." />
-                <marker date="1557599468274" expanded="true" signature="2540:2662" ph="..." />
-                <marker date="1557599468274" expanded="true" signature="3097:3185" ph="..." />
-                <marker date="1557599468274" expanded="true" signature="4155:4156" ph="..." />
-                <marker date="1557599468274" expanded="true" signature="4155:5567" ph="..." />
+                <marker date="1557607824196" expanded="true" signature="1577:1930" ph="..." />
+                <marker date="1557607824196" expanded="true" signature="2534:2656" ph="..." />
+                <marker date="1557607824196" expanded="true" signature="3091:3179" ph="..." />
+                <marker date="1557607824196" expanded="true" signature="4172:4173" ph="..." />
+                <marker date="1557607824196" expanded="true" signature="4172:5585" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/capital-common-countries.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -220,12 +230,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22247024" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13467261" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24262296" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.09836066" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -243,18 +253,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/output/capital-common-countries.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GoogleTestSet/capital-common-countries.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sample_eval.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -269,17 +267,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vector_model.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14422">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/capital-common-countries.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoogleTestSet/capital-common-countries.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8194" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/word_analogy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="198" column="8" selection-start-line="198" selection-start-column="8" selection-end-line="198" selection-end-column="8" />
+        <state relative-caret-position="369">
+          <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
           <folding>
             <element signature="e#163#173#0" expanded="true" />
-            <marker date="1557599468274" expanded="true" signature="1583:1936" ph="..." />
-            <marker date="1557599468274" expanded="true" signature="2540:2662" ph="..." />
-            <marker date="1557599468274" expanded="true" signature="3097:3185" ph="..." />
-            <marker date="1557599468274" expanded="true" signature="4155:4156" ph="..." />
-            <marker date="1557599468274" expanded="true" signature="4155:5567" ph="..." />
+            <marker date="1557607824196" expanded="true" signature="1577:1930" ph="..." />
+            <marker date="1557607824196" expanded="true" signature="2534:2656" ph="..." />
+            <marker date="1557607824196" expanded="true" signature="3091:3179" ph="..." />
+            <marker date="1557607824196" expanded="true" signature="4172:4173" ph="..." />
+            <marker date="1557607824196" expanded="true" signature="4172:5585" ph="..." />
           </folding>
         </state>
       </provider>

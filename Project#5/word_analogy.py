@@ -41,7 +41,7 @@ import time
 
 # temporary-manual reading values
 vector_file = "vector_model.txt"
-vector_file_size = 773  # number of words in smaller_model.txt
+vector_file_size = 896  # number of words in vector_file
 input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet'
 output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output'
 should_normalize = 1
@@ -146,6 +146,7 @@ def solve(line):
     # handling similarity metrics
     if similarity_type == 0:
         result = best_euclidean_distance(summary_vector)
+        # result = "T"
     elif similarity_type == 1:
         result = best_manhattan_distance(summary_vector)
     else:
@@ -186,17 +187,17 @@ def main():
         input_filepath = os.path.join(input_directory, filename)
         output_filepath = os.path.join(output_directory, filename)
 
-        samples_amount = 0
-
         # read from file
         with open(input_filepath, 'r') as input_file:
             with open(output_filepath, 'w') as output_file:
                 for line in input_file.readlines():
                     samples_amount += 1
-                    output_file.write(line)
+                    output_file.write(solve(line))
 
         print(filename, " is done. = ", samples_amount)
+        break
 
+    # stop timer
     end = time.time()
     print("Runtime: ", end - start)
 
