@@ -8,6 +8,7 @@
 import sys
 import os
 import math
+import time
 
 #
 # This is an examples of reading files from directory using sys and Python
@@ -155,6 +156,10 @@ def solve(line):
 
 
 def main():
+
+    # timer starts
+    start = time.time()
+
     # Step:1 - reading vectors
     with open(vector_file, 'r') as open_file:
         for line in open_file.readlines():
@@ -181,15 +186,19 @@ def main():
         input_filepath = os.path.join(input_directory, filename)
         output_filepath = os.path.join(output_directory, filename)
 
+        samples_amount = 0
+
         # read from file
         with open(input_filepath, 'r') as input_file:
             with open(output_filepath, 'w') as output_file:
                 for line in input_file.readlines():
                     samples_amount += 1
-                    output_file.write(solve(line))
+                    output_file.write(line)
 
-        break
-    print(samples_amount)
+        print(filename, " is done. = ", samples_amount)
+
+    end = time.time()
+    print("Runtime: ", end - start)
 
 
 if __name__ == "__main__":
