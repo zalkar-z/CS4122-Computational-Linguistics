@@ -39,7 +39,7 @@ import math
 # similarity_type = sys.argv[6]
 
 # temporary-manual reading values
-vector_file = "smaller_model.txt"
+vector_file = "vector_model.txt"
 vector_file_size = 773  # number of words in smaller_model.txt
 input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet'
 output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output'
