@@ -42,8 +42,10 @@ import time
 # temporary-manual reading values
 vector_file = "vector_model.txt"
 vector_file_size = 896  # number of words in vector_file
-input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet'
-output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output'
+# input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet'
+input_directory = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet'
+# output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output'
+output_directory = r'/home/zalkar/Computational_Linguistics/Project#5/output'
 should_normalize = 1
 similarity_type = 0
 
@@ -193,9 +195,11 @@ def main():
                 for line in input_file.readlines():
                     samples_amount += 1
                     output_file.write(solve(line))
+                    # Try out NumPy for vector operations to cut the time complexity
 
-        print(filename, " is done. = ", samples_amount)
         break
+        # print(filename, " is done. = ", samples_amount)
+
 
     # stop timer
     end = time.time()
