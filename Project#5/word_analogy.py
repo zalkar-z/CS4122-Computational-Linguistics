@@ -9,6 +9,7 @@ import sys
 import os
 import math
 import time
+import numpy
 
 #
 # This is an examples of reading files from directory using sys and Python
@@ -173,33 +174,34 @@ def main():
             # the rest is list of vector
             vector_list = temp_list[1:]
             # add to the global dictionary
-            vectors[vector_word] = list(map(float, vector_list))
+            vectors[vector_word] = numpy.array(vector_list, dtype=float)
 
-    samples_amount = 0
-
-    # Step:2 - read tests
-    for filename in os.listdir(input_directory):
-        # skip hidden files
-        if filename.startswith('.'):
-            continue
-        # skip everything NOT .txt
-        if not filename.endswith('.txt'):
-            continue
-        # join directory path with file path to get the whole address
-        input_filepath = os.path.join(input_directory, filename)
-        output_filepath = os.path.join(output_directory, filename)
-
-        # read from file
-        with open(input_filepath, 'r') as input_file:
-            with open(output_filepath, 'w') as output_file:
-                for line in input_file.readlines():
-                    samples_amount += 1
-                    output_file.write(solve(line))
-                    # Try out NumPy for vector operations to cut the time complexity
-
-        break
-        # print(filename, " is done. = ", samples_amount)
-
+    # samples_amount = 0
+    #
+    # # Step:2 - read tests
+    # for filename in os.listdir(input_directory):
+    #     # skip hidden files
+    #     if filename.startswith('.'):
+    #         continue
+    #     # skip everything NOT .txt
+    #     if not filename.endswith('.txt'):
+    #         continue
+    #     # join directory path with file path to get the whole address
+    #     input_filepath = os.path.join(input_directory, filename)
+    #     output_filepath = os.path.join(output_directory, filename)
+    #
+    #     # read from file
+    #     with open(input_filepath, 'r') as input_file:
+    #         with open(output_filepath, 'w') as output_file:
+    #             for line in input_file.readlines():
+    #                 samples_amount += 1
+    #                 output_file.write(solve(line))
+    #                 # Try out NumPy for vector operations to cut the time complexity
+    #
+    #
+    #     print(filename, " is done. = ", samples_amount)
+    #     break
+    #
 
     # stop timer
     end = time.time()

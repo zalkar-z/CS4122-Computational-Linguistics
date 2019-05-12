@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39b0ffcb-7784-4a8c-9d1c-b30af84b4160" name="Default Changelist" comment="" />
+    <list default="true" id="39b0ffcb-7784-4a8c-9d1c-b30af84b4160" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/output/gram6-nationality-adjective.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram6-nationality-adjective.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/time_complexity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/time_complexity.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_analogy.py" beforeDir="false" afterPath="$PROJECT_DIR$/word_analogy.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/word_analogy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+            <state relative-caret-position="613">
+              <caret line="200" column="5" lean-forward="true" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
               <folding>
                 <element signature="e#163#173#0" expanded="true" />
               </folding>
@@ -22,20 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/time_complexity.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="77" selection-start-column="77" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checker.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -54,6 +49,15 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -70,8 +74,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/checker.py" />
-        <option value="$PROJECT_DIR$/word_analogy.py" />
         <option value="$PROJECT_DIR$/time_complexity.txt" />
+        <option value="$PROJECT_DIR$/word_analogy.py" />
       </list>
     </option>
   </component>
@@ -119,7 +123,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.word_analogy">
+  <component name="RunManager" selected="Python.checker">
     <configuration name="checker" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Project#5" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -237,20 +241,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/word_analogy.py">
+    <entry file="file://$PROJECT_DIR$/time_complexity.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
-          <folding>
-            <element signature="e#163#173#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/output/gram6-nationality-adjective.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/checker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="120">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -261,13 +265,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/gram6-nationality-adjective.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/time_complexity.txt">
+    <entry file="file://$PROJECT_DIR$/word_analogy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="77" selection-start-column="77" selection-end-column="77" />
+        <state relative-caret-position="613">
+          <caret line="200" column="5" lean-forward="true" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
+          <folding>
+            <element signature="e#163#173#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
