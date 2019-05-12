@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39b0ffcb-7784-4a8c-9d1c-b30af84b4160" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/output/gram6-nationality-adjective.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram6-nationality-adjective.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/time_complexity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/time_complexity.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/word_analogy.py" beforeDir="false" afterPath="$PROJECT_DIR$/word_analogy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/word_analogy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="200" column="5" lean-forward="true" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
+            <state relative-caret-position="575">
+              <caret line="172" column="42" lean-forward="true" selection-start-line="172" selection-start-column="42" selection-end-line="172" selection-end-column="42" />
               <folding>
                 <element signature="e#163#173#0" expanded="true" />
               </folding>
@@ -267,8 +265,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/word_analogy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="200" column="5" lean-forward="true" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
+        <state relative-caret-position="575">
+          <caret line="172" column="42" lean-forward="true" selection-start-line="172" selection-start-column="42" selection-end-line="172" selection-end-column="42" />
           <folding>
             <element signature="e#163#173#0" expanded="true" />
           </folding>

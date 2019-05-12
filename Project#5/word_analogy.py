@@ -132,18 +132,15 @@ def best_cosine_distance(first_vector):
 
 def solve(line):
     # split line by whitespace
-    line = line.split()
-
-    # an array for paired words
-    first_pair = [line[0], line[1]]
-    second_pair = [line[2], '']
+    words = line.split()
 
     # handling normalization
     if should_normalize:
-        normalize_vectors([first_pair[0], first_pair[1], second_pair[0]])
+        normalize_vectors(words)
 
     # handling vector addition and subtraction
     summary_vector = vector_sum(vectors[second_pair[0]], vectors[first_pair[1]])
+    sum_of_vectors =
     summary_vector = vector_difference(summary_vector, vectors[first_pair[0]])
 
     # handling similarity metrics
