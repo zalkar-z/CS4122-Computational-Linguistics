@@ -43,39 +43,15 @@ import numpy
 # temporary-manual reading values
 vector_file = "vector_model.txt"
 vector_file_size = 896  # number of words in vector_file
-# input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet'
-input_directory = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet'
-# output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output'
-output_directory = r'/home/zalkar/Computational_Linguistics/Project#5/output'
-should_normalize = 1
+input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet'
+# input_directory = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet'
+output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output'
+# output_directory = r'/home/zalkar/Computational_Linguistics/Project#5/output'
+should_normalize = 0
 similarity_type = 0
 
 
 vectors = {}  # a global dictionary for vectors
-
-
-#
-# Function: Adds two vectors of the same length
-# Return:   Summarized vector.
-#
-def vector_sum(first, second):
-    result = []
-    for i in range(len(first)):
-        result.append(first[i] + second[i])
-
-    return result
-
-
-#
-# Function: Subtracts two vectors of the same length
-# Return:   Subtracted vector.
-#
-def vector_difference(first, second):
-    result = []
-    for i in range(len(first)):
-        result.append(first[i] - second[i])
-
-    return result
 
 
 #
@@ -102,58 +78,56 @@ def normalize_vectors(words):
 
 
 def euclidean_distance(first_vector, second_vector):
-    dist = [(a - b) ** 2 for a, b in zip(first_vector, second_vector)]
-    dist = math.sqrt(sum(dist))
-    return dist
+    return numpy.linalg.norm(first_vector - second_vector)
 
 
-def best_euclidean_distance(first_vector):
-    best_distance = float('inf')
-    best_word = ''
-
-    for word in vectors:
-        second_vector = vectors[word]
-        current_distance = euclidean_distance(first_vector, second_vector)
-
-        if current_distance < best_distance:
-            best_distance = current_distance
-            best_word = word
-
-    return best_word
-
-
-def best_manhattan_distance(first_vector):
+def manhattan_distance(first_vector, second_vector):
     return ''
 
 
-def best_cosine_distance(first_vector):
+def cosine_distance(first_vector, second_vector):
     return ''
+
+
+def vector_distance(type, first_vector, second_vector):
+    if type == 0:
+        return euclidean_distance(first_vector, second_vector)
+    elif type == 1:
+        return manhattan_distance(first_vector, second_vector)
+    else:
+        return cosine_distance(first_vector, second_vector)
 
 
 def solve(line):
     # split line by whitespace
     words = line.split()
 
+    # handling words that are not in the vector model
+    for word in words:
+        if word not in vectors:
+            # initiate vectors with zeros
+            vectors[word] = numpy.zeros(300)
+
     # handling normalization
     if should_normalize:
         normalize_vectors(words)
 
     # handling vector addition and subtraction
-    summary_vector = vector_sum(vectors[second_pair[0]], vectors[first_pair[1]])
-    sum_of_vectors =
-    summary_vector = vector_difference(summary_vector, vectors[first_pair[0]])
+    # summary_vector = vector_sum(vectors[second_pair[0]], vectors[first_pair[1]])
+    sum_of_vectors = numpy.add(vectors[words[2]], vectors[words[1]])
+    # summary_vector = vector_difference(summary_vector, vectors[first_pair[0]])
+    sum_of_vectors = sum_of_vectors - vectors[words[0]]
 
-    # handling similarity metrics
-    if similarity_type == 0:
-        result = best_euclidean_distance(summary_vector)
-        # result = "T"
-    elif similarity_type == 1:
-        result = best_manhattan_distance(summary_vector)
-    else:
-        result = best_cosine_distance(summary_vector)
+    best_distance = float('inf')
+    result = ''
 
-    second_pair[1] = result
-    return first_pair[0] + ' ' + first_pair[1] + ' ' + second_pair[0] + ' ' + second_pair[1] + '\n'
+    for word in vectors:
+        current_distance = vector_distance(similarity_type, sum_of_vectors, vectors[word])
+        if current_distance < best_distance:
+            best_distance = current_distance
+            result = word
+
+    return words[0] + ' ' + words[1] + ' ' + words[2] + ' ' + result + '\n'
 
 
 def main():
@@ -173,32 +147,30 @@ def main():
             # add to the global dictionary
             vectors[vector_word] = numpy.array(vector_list, dtype=float)
 
-    # samples_amount = 0
-    #
-    # # Step:2 - read tests
-    # for filename in os.listdir(input_directory):
-    #     # skip hidden files
-    #     if filename.startswith('.'):
-    #         continue
-    #     # skip everything NOT .txt
-    #     if not filename.endswith('.txt'):
-    #         continue
-    #     # join directory path with file path to get the whole address
-    #     input_filepath = os.path.join(input_directory, filename)
-    #     output_filepath = os.path.join(output_directory, filename)
-    #
-    #     # read from file
-    #     with open(input_filepath, 'r') as input_file:
-    #         with open(output_filepath, 'w') as output_file:
-    #             for line in input_file.readlines():
-    #                 samples_amount += 1
-    #                 output_file.write(solve(line))
-    #                 # Try out NumPy for vector operations to cut the time complexity
-    #
-    #
-    #     print(filename, " is done. = ", samples_amount)
-    #     break
-    #
+    samples_amount = 0
+
+    # Step:2 - read tests
+    for filename in os.listdir(input_directory):
+        # skip hidden files
+        if filename.startswith('.'):
+            continue
+        # skip everything NOT .txt
+        if not filename.endswith('.txt'):
+            continue
+
+        # join directory path with file path to get the whole address
+        input_filepath = os.path.join(input_directory, filename)
+        output_filepath = os.path.join(output_directory, filename)
+
+        # read from file
+        with open(input_filepath, 'r') as input_file:
+            with open(output_filepath, 'w') as output_file:
+                for line in input_file.readlines():
+                    samples_amount += 1
+                    output_file.write(solve(line))
+                    # Try out NumPy for vector operations to cut the time complexity
+
+        print(filename, " is done. = ", samples_amount)
 
     # stop timer
     end = time.time()
