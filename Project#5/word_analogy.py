@@ -121,11 +121,11 @@ def best_euclidean_distance(first_vector):
     return best_word
 
 
-def best_manhattan_distance(first_vector, second_vector):
+def best_manhattan_distance(first_vector):
     return ''
 
 
-def best_cosine_distance(first_vector, second_vector):
+def best_cosine_distance(first_vector):
     return ''
 
 
