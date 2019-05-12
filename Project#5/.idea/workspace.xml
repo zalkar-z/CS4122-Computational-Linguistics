@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39b0ffcb-7784-4a8c-9d1c-b30af84b4160" name="Default Changelist" comment="" />
+    <list default="true" id="39b0ffcb-7784-4a8c-9d1c-b30af84b4160" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/checker_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/checker_directory.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,14 +15,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="py" value="809" />
+          <entry key="py" value="827" />
           <entry key="txt" value="133" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="147" />
-          <entry key="Python" value="809" />
+          <entry key="Python" value="827" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -65,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/checker_directory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="10" selection-start-line="3" selection-end-line="3" selection-end-column="10" />
+            <state relative-caret-position="119">
+              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -108,6 +110,7 @@
         <option value="$PROJECT_DIR$/word_analogy.py" />
         <option value="$PROJECT_DIR$/time_complexity.txt" />
         <option value="$PROJECT_DIR$/checker_folder.py" />
+        <option value="$PROJECT_DIR$/checker_directory.py" />
       </list>
     </option>
   </component>
@@ -322,8 +325,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/checker_directory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" selection-start-line="3" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="119">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
