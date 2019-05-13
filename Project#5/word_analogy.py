@@ -12,26 +12,26 @@ import numpy
 from scipy.spatial import distance
 
 # command line readings
-vector_file = sys.argv[1]
-input_directory = sys.argv[2]
-output_directory = sys.argv[3]
-eval_file = sys.argv[4]
-should_normalize = sys.argv[5]
-similarity_type = sys.argv[6]
+# vector_file = sys.argv[1]
+# input_directory = sys.argv[2]
+# output_directory = sys.argv[3]
+# eval_file = sys.argv[4]
+# should_normalize = sys.argv[5]
+# similarity_type = sys.argv[6]
 
 # temporary-manual reading values
-# vector_file = "vector_model.txt"
-# vector_file_size = 896  # number of words in vector_file
+vector_file = "vector_model.txt"
+vector_file_size = 896  # number of words in vector_file
 # input_directory = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/GoogleTestSet' # mac
-# # input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet' # windows
-# # input_directory = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet' # linux
-#
+# input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet' # windows
+input_directory = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet' # linux
+
 # output_directory = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/output' # mac
-# # output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output' # windows
-# # output_directory = r'/home/zalkar/Computational_Linguistics/Project#5/output' # linux
-#
-# should_normalize = 0
-# similarity_type = 0
+# output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output' # windows
+output_directory = r'/home/zalkar/Computational_Linguistics/Project#5/output' # linux
+
+should_normalize = 0
+similarity_type = 0
 
 
 vectors = {}  # a global dictionary for vectors
