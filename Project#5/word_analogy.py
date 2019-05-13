@@ -43,10 +43,14 @@ import numpy
 # temporary-manual reading values
 vector_file = "vector_model.txt"
 vector_file_size = 896  # number of words in vector_file
-input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet'
-# input_directory = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet'
-output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output'
-# output_directory = r'/home/zalkar/Computational_Linguistics/Project#5/output'
+input_directory = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/GoogleTestSet' # mac
+# input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet' # windows
+# input_directory = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet' # linux
+
+output_directory = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/output' # mac
+# output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output' # windows
+# output_directory = r'/home/zalkar/Computational_Linguistics/Project#5/output' # linux
+
 should_normalize = 0
 similarity_type = 0
 

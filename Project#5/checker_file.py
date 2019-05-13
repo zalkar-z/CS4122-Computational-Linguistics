@@ -1,10 +1,14 @@
 
 from itertools import product
 
-first_file = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet\currency.txt'
-# first_file = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet/gram6-nationality-adjective.txt'
-second_file = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output\currency.txt'
-# second_file = r'/home/zalkar/Computational_Linguistics/Project#5/output/gram6-nationality-adjective.txt'
+
+first_file = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/GoogleTestSet/currency.txt' # mac
+# first_file = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet\currency.txt' # windows
+# first_file = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet/gram6-nationality-adjective.txt' # linux
+
+second_file = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/output/currency.txt'
+# second_file = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output\currency.txt' # windows
+# second_file = r'/home/zalkar/Computational_Linguistics/Project#5/output/gram6-nationality-adjective.txt' # linux
 
 list1 = []
 list2 = []

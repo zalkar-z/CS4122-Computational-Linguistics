@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4880c53-ef59-4916-bcf7-f4cb4ff19763" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/zalkar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/zalkar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project#3/build_ngram_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project#3/build_ngram_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project#3/output_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project#3/output_test.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project#3/build_ngram_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+            <state relative-caret-position="1045">
+              <caret line="126" column="33" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
               <folding>
                 <element signature="e#168#178#0" expanded="true" />
               </folding>
@@ -49,15 +46,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project#3/output_test.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project#3/checker.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -90,12 +82,14 @@
       <find>hou</find>
       <find>heard</find>
       <find>word</find>
+      <find>bigrams_nested</find>
     </findStrings>
     <replaceStrings>
       <replace>bigrams</replace>
       <replace>bigrams_nested</replace>
       <replace>ugrams</replace>
       <replace>unigram</replace>
+      <replace>self.dict</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -279,10 +273,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.checker" />
-      <item itemvalue="Python.nltk_clean_and_count_stems" />
       <item itemvalue="Python.build_ngram_model" />
       <item itemvalue="Python.checker (1)" />
+      <item itemvalue="Python.checker" />
+      <item itemvalue="Python.nltk_clean_and_count_stems" />
       <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
@@ -317,7 +311,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.500998" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31896552" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23564357" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23564357" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -443,7 +437,7 @@
     <entry file="file://$PROJECT_DIR$/Project#3/checker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -466,8 +460,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project#3/build_ngram_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+        <state relative-caret-position="1045">
+          <caret line="126" column="33" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
           <folding>
             <element signature="e#168#178#0" expanded="true" />
           </folding>
