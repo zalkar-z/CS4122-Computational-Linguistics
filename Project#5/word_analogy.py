@@ -9,7 +9,6 @@ import sys
 import os
 import time
 import numpy
-from scipy.spatial import distance
 
 # command line readings
 # vector_file = sys.argv[1]
@@ -30,8 +29,8 @@ input_directory = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestS
 # output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output' # windows
 output_directory = r'/home/zalkar/Computational_Linguistics/Project#5/output' # linux
 
-should_normalize = 0
-similarity_type = 0
+should_normalize = 1
+similarity_type = 1
 
 
 vectors = {}  # a global dictionary for vectors
@@ -60,26 +59,20 @@ def normalize_vectors(words):
             vectors[word][i] = vectors[word][i] / magnitude
 
 
-def euclidean_distance(first_vector, second_vector):
-    return numpy.linalg.norm(first_vector - second_vector)
-    # return spatial.distance.euclidean(first_vector, second_vector) # takes 3 times longer than numpy
-
-
-def manhattan_distance(first_vector, second_vector):
-    return distance.cityblock(first_vector, second_vector)
-
-
-def cosine_distance(first_vector, second_vector):
-    return distance.cosine(first_vector, second_vector)
-
-
+#
+# Function: Returns distance of a given type.
+# Return:   Returns distance of a given type.
+#
 def vector_distance(type, first_vector, second_vector):
     if type == 0:
-        return euclidean_distance(first_vector, second_vector)
+        # Euclidean distance
+        return numpy.linalg.norm(first_vector - second_vector)
     elif type == 1:
-        return manhattan_distance(first_vector, second_vector)
+        # Manhattan distance
+        return numpy.sum(numpy.abs(first_vector - second_vector))
     else:
-        return cosine_distance(first_vector, second_vector)
+        # Cosine distance
+        return 1 - numpy.dot(first_vector, second_vector)
 
 
 def solve(line):
@@ -103,7 +96,6 @@ def solve(line):
     best_distance = float('inf')
     result = ''
 
-    # time complexity here is ~1000 * 300 = 300,000 (10^5) * (10^4) = (10^9) / (10^7) = (10^2) = 100 seconds
     for word in vectors:
         current_distance = vector_distance(similarity_type, sum_of_vectors, vectors[word])
         if current_distance < best_distance:

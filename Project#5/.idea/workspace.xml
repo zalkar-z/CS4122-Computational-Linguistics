@@ -3,11 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="39b0ffcb-7784-4a8c-9d1c-b30af84b4160" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/checker_directory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/capital-common-countries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/capital-common-countries.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/capital-world.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/capital-world.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/city-in-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/city-in-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/currency.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/currency.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/family.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/family.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/gram1-adjective-to-adverb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram1-adjective-to-adverb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram2-opposite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram2-opposite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram3-comparative.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram3-comparative.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/gram4-superlative.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram4-superlative.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram5-present-participle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram5-present-participle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram6-nationality-adjective.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram6-nationality-adjective.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram7-past-tense.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram7-past-tense.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram8-plural.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram8-plural.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram9-plural-verbs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram9-plural-verbs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/time_complexity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/time_complexity.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/word_analogy.py" beforeDir="false" afterPath="$PROJECT_DIR$/word_analogy.py" afterDir="false" />
     </list>
@@ -19,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/word_analogy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="1131">
+              <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
               <folding>
                 <element signature="e#163#173#0" expanded="true" />
               </folding>
@@ -40,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checker_directory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
+            <state relative-caret-position="522">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#168#177#0" expanded="true" />
               </folding>
@@ -55,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/time_complexity.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="435">
+              <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -79,9 +88,9 @@
         <option value="$PROJECT_DIR$/checker.py" />
         <option value="$PROJECT_DIR$/checker_folder.py" />
         <option value="$PROJECT_DIR$/checker_file.py" />
-        <option value="$PROJECT_DIR$/word_analogy.py" />
-        <option value="$PROJECT_DIR$/time_complexity.txt" />
         <option value="$PROJECT_DIR$/checker_directory.py" />
+        <option value="$PROJECT_DIR$/time_complexity.txt" />
+        <option value="$PROJECT_DIR$/word_analogy.py" />
       </list>
     </option>
   </component>
@@ -330,23 +339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/word_analogy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="e#163#173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/time_complexity.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/checker_file.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -356,10 +348,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/checker_directory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
+        <state relative-caret-position="522">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#168#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/time_complexity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_analogy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1131">
+          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+          <folding>
+            <element signature="e#163#173#0" expanded="true" />
           </folding>
         </state>
       </provider>
