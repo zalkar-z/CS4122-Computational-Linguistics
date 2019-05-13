@@ -9,28 +9,29 @@ import sys
 import os
 import time
 import numpy
+from evaluation import evaluate
 
 # command line readings
-# vector_file = sys.argv[1]
-# input_directory = sys.argv[2]
-# output_directory = sys.argv[3]
-# eval_file = sys.argv[4]
-# should_normalize = sys.argv[5]
-# similarity_type = sys.argv[6]
+vector_file = sys.argv[1]
+input_directory = sys.argv[2]
+output_directory = sys.argv[3]
+eval_file = sys.argv[4]
+should_normalize = sys.argv[5]
+similarity_type = sys.argv[6]
 
 # temporary-manual reading values
-vector_file = "vector_model.txt"
-vector_file_size = 896  # number of words in vector_file
-# input_directory = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/GoogleTestSet' # mac
-input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet' # windows
-# input_directory = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet' # linux
-
-# output_directory = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/output' # mac
-output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output' # windows
-# output_directory = r'/home/zalkar/Computational_Linguistics/Project#5/output' # linux
-
-should_normalize = 1
-similarity_type = 2
+# vector_file = "vector_model.txt"
+# vector_file_size = 896  # number of words in vector_file
+# # input_directory = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/GoogleTestSet' # mac
+# input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet' # windows
+# # input_directory = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet' # linux
+#
+# # output_directory = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/output' # mac
+# output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output' # windows
+# # output_directory = r'/home/zalkar/Computational_Linguistics/Project#5/output' # linux
+#
+# should_normalize = 1
+# similarity_type = 2
 
 vectors = {}  # a global dictionary for vectors
 
@@ -86,9 +87,11 @@ def solve(line):
     sum_of_vectors = numpy.add(vectors[words[2]], vectors[words[1]])
     sum_of_vectors = sum_of_vectors - vectors[words[0]]
 
+    # initial values
     best_distance = float('inf')
     result = ''
 
+    # looping through all words in global vectors
     for word in vectors:
         current_distance = vector_distance(similarity_type, sum_of_vectors, vectors[word])
         if current_distance < best_distance:
@@ -110,12 +113,10 @@ def main():
             temp_list = line.split()
             # save the first one as word
             vector_word = temp_list[0]
-            # the rest is list of vector
+            # the rest is a list of vectors
             vector_list = temp_list[1:]
             # add to the global dictionary
             vectors[vector_word] = numpy.array(vector_list, dtype=float)
-
-    samples_amount = 0
 
     # Step:2 - read tests
     for filename in os.listdir(input_directory):
@@ -130,14 +131,14 @@ def main():
         input_filepath = os.path.join(input_directory, filename)
         output_filepath = os.path.join(output_directory, filename)
 
-        # read from file
+        # read from file and write a solution to a new file
         with open(input_filepath, 'r') as input_file:
             with open(output_filepath, 'w') as output_file:
                 for line in input_file.readlines():
-                    samples_amount += 1
                     output_file.write(solve(line))
 
-        print(filename, " is done. = ", samples_amount)
+    # use external function to write the evaluation of directory
+    evaluate(input_directory, output_directory, eval_file)
 
     # stop timer
     end = time.time()
