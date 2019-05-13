@@ -15,6 +15,10 @@ second_file = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/output
 # second_file = r'/home/zalkar/Computational_Linguistics/Project#5/output/gram6-nationality-adjective.txt' # linux
 
 
+#
+# Function: compares two .txt files line by line.
+# Return:   Percentage of similarity.
+#
 def compare_two_files(first_file_address, second_file_address):
     list1 = []
     list2 = []
