@@ -61,7 +61,11 @@ def vector_distance(type, first_vector, second_vector):
         return numpy.sum(numpy.abs(first_vector - second_vector))
     else:
         # Cosine distance
-        return 1 - numpy.dot(first_vector, second_vector)
+        temp = numpy.sqrt(numpy.dot(first_vector, first_vector)) * numpy.sqrt(numpy.dot(second_vector, second_vector))
+        # handling division by zero
+        if temp == 0:
+            temp = 1.0
+        return 1 - numpy.dot(first_vector, second_vector) / temp
 
 
 def solve(line):
