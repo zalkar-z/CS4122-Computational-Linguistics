@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39b0ffcb-7784-4a8c-9d1c-b30af84b4160" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/time_complexity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/time_complexity.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/capital-common-countries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/capital-common-countries.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/capital-world.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/capital-world.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/city-in-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/city-in-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/currency.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/currency.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/family.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/family.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram1-adjective-to-adverb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram1-adjective-to-adverb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram2-opposite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram2-opposite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram3-comparative.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram3-comparative.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram4-superlative.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram4-superlative.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram5-present-participle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram5-present-participle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram6-nationality-adjective.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram6-nationality-adjective.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram7-past-tense.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram7-past-tense.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram8-plural.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram8-plural.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/gram9-plural-verbs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/gram9-plural-verbs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_analogy.py" beforeDir="false" afterPath="$PROJECT_DIR$/word_analogy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/word_analogy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="174" selection-start-line="155" selection-start-column="25" selection-end-line="174" />
+            <state relative-caret-position="430">
+              <caret line="128" column="44" lean-forward="true" selection-start-line="128" selection-start-column="44" selection-end-line="128" selection-end-column="44" />
               <folding>
                 <element signature="e#163#173#0" expanded="true" />
               </folding>
@@ -25,10 +40,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GoogleTestSet/family.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="502" column="25" lean-forward="true" selection-start-line="502" selection-start-column="25" selection-end-line="502" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checker_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+            <state relative-caret-position="135">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -36,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checker_directory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="69" lean-forward="true" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+            <state relative-caret-position="121">
+              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
               <folding>
                 <element signature="e#168#177#0" expanded="true" />
               </folding>
@@ -48,17 +72,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sample_eval.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+            <state relative-caret-position="420">
+              <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/time_complexity.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -80,10 +104,10 @@
       <list>
         <option value="$PROJECT_DIR$/checker.py" />
         <option value="$PROJECT_DIR$/checker_folder.py" />
-        <option value="$PROJECT_DIR$/word_analogy.py" />
         <option value="$PROJECT_DIR$/checker_file.py" />
         <option value="$PROJECT_DIR$/checker_directory.py" />
         <option value="$PROJECT_DIR$/time_complexity.txt" />
+        <option value="$PROJECT_DIR$/word_analogy.py" />
       </list>
     </option>
   </component>
@@ -106,6 +130,11 @@
             <path>
               <item name="Project#5" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project#5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project#5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project#5" type="462c0819:PsiDirectoryNode" />
+              <item name="GoogleTestSet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -132,7 +161,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.checker_directory">
+  <component name="RunManager" selected="Python.word_analogy">
     <configuration name="checker" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Project#5" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -225,9 +254,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.word_analogy" />
         <item itemvalue="Python.checker_directory" />
         <item itemvalue="Python.checker_file" />
-        <item itemvalue="Python.word_analogy" />
         <item itemvalue="Python.checker" />
       </list>
     </recent_temporary>
@@ -254,7 +283,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28613862" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3980198" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -270,13 +299,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vector_model.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14422">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/gram6-nationality-adjective.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -297,9 +319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GoogleTestSet/family.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/capital-common-countries.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -310,44 +329,58 @@
     <entry file="file://$PROJECT_DIR$/output/currency.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/word_analogy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="174" selection-start-line="155" selection-start-column="25" selection-end-line="174" />
-          <folding>
-            <element signature="e#163#173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checker_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checker_directory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="69" lean-forward="true" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
-          <folding>
-            <element signature="e#168#177#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sample_eval.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        <state relative-caret-position="420">
+          <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/time_complexity.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoogleTestSet/family.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="502" column="25" lean-forward="true" selection-start-line="502" selection-start-column="25" selection-end-line="502" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vector_model.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker_directory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="e#168#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_analogy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="128" column="44" lean-forward="true" selection-start-line="128" selection-start-column="44" selection-end-line="128" selection-end-column="44" />
+          <folding>
+            <element signature="e#163#173#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

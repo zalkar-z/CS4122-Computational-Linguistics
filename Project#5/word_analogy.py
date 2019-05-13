@@ -117,14 +117,13 @@ def solve(line):
         normalize_vectors(words)
 
     # handling vector addition and subtraction
-    # summary_vector = vector_sum(vectors[second_pair[0]], vectors[first_pair[1]])
     sum_of_vectors = numpy.add(vectors[words[2]], vectors[words[1]])
-    # summary_vector = vector_difference(summary_vector, vectors[first_pair[0]])
     sum_of_vectors = sum_of_vectors - vectors[words[0]]
 
     best_distance = float('inf')
     result = ''
 
+    # time complexity here is ~900 * 300 = 270,000 (10^5) * (10^4) = (10^9) / (10^7) = (10^2) = 100 seconds
     for word in vectors:
         current_distance = vector_distance(similarity_type, sum_of_vectors, vectors[word])
         if current_distance < best_distance:
@@ -172,7 +171,6 @@ def main():
                 for line in input_file.readlines():
                     samples_amount += 1
                     output_file.write(solve(line))
-                    # Try out NumPy for vector operations to cut the time complexity
 
         print(filename, " is done. = ", samples_amount)
 
