@@ -22,30 +22,17 @@ import numpy
 vector_file = "vector_model.txt"
 vector_file_size = 896  # number of words in vector_file
 # input_directory = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/GoogleTestSet' # mac
-# input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet' # windows
-input_directory = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet' # linux
+input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet' # windows
+# input_directory = r'/home/zalkar/Computational_Linguistics/Project#5/GoogleTestSet' # linux
 
 # output_directory = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/output' # mac
-# output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output' # windows
-output_directory = r'/home/zalkar/Computational_Linguistics/Project#5/output' # linux
+output_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\output' # windows
+# output_directory = r'/home/zalkar/Computational_Linguistics/Project#5/output' # linux
 
 should_normalize = 1
-similarity_type = 1
-
+similarity_type = 2
 
 vectors = {}  # a global dictionary for vectors
-
-
-#
-# Function: calculates the magnitude of a given vector.
-# Return:   A magnitude of a given vector.
-#
-def magnitude_of_vector(vector):
-    magnitude = 0
-    for i in range(len(vector)):
-        magnitude += vector[i] * vector[i]
-
-    return magnitude
 
 
 #
@@ -54,9 +41,11 @@ def magnitude_of_vector(vector):
 #
 def normalize_vectors(words):
     for word in words:
-        magnitude = magnitude_of_vector(vectors[word])
-        for i in range(len(vectors[word])):
-            vectors[word][i] = vectors[word][i] / magnitude
+        # counting the magnitude of a given vector
+        magnitude = numpy.linalg.norm(vectors[word], ord=2)
+        # dividing all value inside the vector by the magnitude, it it is higher than zero
+        if magnitude:
+            vectors[word] = vectors[word] / magnitude
 
 
 #
