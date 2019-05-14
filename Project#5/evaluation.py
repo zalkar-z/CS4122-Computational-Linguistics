@@ -48,7 +48,7 @@ def evaluate(input_directory, output_directory, eval_file):
 
 
 def main():
-
+    print("CHECK")
 
 
 if __name__ == "__main__":

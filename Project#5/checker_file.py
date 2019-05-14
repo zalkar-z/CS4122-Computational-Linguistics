@@ -31,17 +31,17 @@ def compare_two_files(first_file_address, second_file_address):
         for line2 in second.readlines():
             list2.append(line2)
 
-    count = 0
+    similar = 0
 
     for i in range(len(list1)):
         if list1[i] == list2[i]:
-            count += 1
+            similar += 1
 
-    return count / len(list1) * 100
+    return [similar, len(list1)]
 
 
 def main():
-    print(compare_two_files(first_file, second_file))
+    print("CHECK")
 
 
 if __name__ == "__main__":
