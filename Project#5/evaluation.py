@@ -41,15 +41,10 @@ def evaluate(input_directory, output_directory, eval_file):
             total += similarity[1]
             similar += similarity[0]
 
-            eval_file.write(filename)
-            eval_file.write("ACCURACY TOP1: ", str(similarity[0] / similarity[1]) + "%", "(", str(similarity[0]) + "/" + str(similarity[1]), ")" )
+            print(similarity)
 
-        eval_file.write("Total accuracy: ", str(similar / total) + "%", "(" + str(similar) + str(total) + ")")
+            eval_file.write(filename + '\n')
+            eval_file.write("ACCURACY TOP1: " + str(similarity[0] / similarity[1] * 100) + "%" + " (" + str(similarity[0]) + "/" + str(similarity[1]) + ")" + '\n')
 
+        eval_file.write("Total accuracy: " + str(similar / total * 100) + "%" + " (" + str(similar) + "/" + str(total) + ")")
 
-def main():
-    print("CHECK")
-
-
-if __name__ == "__main__":
-    main()
