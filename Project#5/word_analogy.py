@@ -55,9 +55,11 @@ def normalize_vectors(words):
 #
 def vector_distance(type, first_vector, second_vector):
     if type == 0:
+        print("*")
         # Euclidean distance
         return numpy.linalg.norm(first_vector - second_vector)
     elif type == 1:
+        print("-")
         # Manhattan distance
         return numpy.sum(numpy.abs(first_vector - second_vector))
     else:
@@ -66,7 +68,7 @@ def vector_distance(type, first_vector, second_vector):
         # handling division by zero
         if temp == 0:
             temp = 1.0
-        return 1 - numpy.dot(first_vector, second_vector) / temp
+        return 2 - numpy.dot(first_vector, second_vector) / temp
 
 
 def solve(line):
@@ -105,6 +107,9 @@ def main():
 
     # timer starts
     start = time.time()
+
+    print(should_normalize)
+    print(similarity_type)
 
     # Step:1 - reading vectors
     with open(vector_file, 'r') as open_file:
