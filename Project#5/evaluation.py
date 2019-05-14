@@ -41,8 +41,6 @@ def evaluate(input_directory, output_directory, eval_file):
             total += similarity[1]
             similar += similarity[0]
 
-            print(similarity)
-
             eval_file.write(filename + '\n')
             eval_file.write("ACCURACY TOP1: " + str(similarity[0] / similarity[1] * 100) + "%" + " (" + str(similarity[0]) + "/" + str(similarity[1]) + ")" + '\n')
 
