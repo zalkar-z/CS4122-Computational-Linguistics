@@ -20,7 +20,7 @@ should_normalize = sys.argv[5]
 similarity_type = sys.argv[6]
 
 # temporary-manual reading values
-# vector_file = "vector_model.txt"
+# vector_file = "vectormodel.txt"
 # vector_file_size = 896  # number of words in vector_file
 # # input_directory = r'/Users/zalkar/Desktop/Computational_Linguistics/Project#5/GoogleTestSet' # mac
 # input_directory = r'C:\Users\User\Desktop\Bennington College\term2\Computational_Linguistics\MyGitHub\Project#5\GoogleTestSet' # windows
