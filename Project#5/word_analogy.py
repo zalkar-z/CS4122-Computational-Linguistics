@@ -37,6 +37,14 @@ vectors = {}  # a global dictionary for vectors
 
 
 #
+# Function: Calculates a magnitude of a given vector.
+# Return:   A magnitude of a given vector.
+#
+def magnitude_of_vector(vector):
+    return numpy.linalg.norm(vector, ord=2)
+
+
+#
 # Function: Normalizes vectors of given words in an array.
 # Return:   Nothing.
 #
@@ -63,14 +71,13 @@ def vector_distance(distance_type, first_vector, second_vector):
         return numpy.sum(numpy.square(first_vector - second_vector))
     if distance_type == 1:
         # Manhattan distance
-        return numpy.sum(numpy.abs(first_vector - second_vector))
+        return numpy.sum(numpy.abs(second_vector - first_vector))
     if distance_type == 2:
         # Cosine distance
-        temp = numpy.sqrt(numpy.dot(first_vector, first_vector)) * numpy.sqrt(numpy.dot(second_vector, second_vector))
-        # handling division by zero
-        if temp == 0:
-            temp = 1.0
-        return 1 - numpy.dot(first_vector, second_vector) / temp
+        if int(should_normalize) == 0:
+            return 1 - (numpy.dot(first_vector, second_vector) / (magnitude_of_vector(first_vector) * magnitude_of_vector(second_vector)))
+        else:
+            return 1 - (numpy.dot(first_vector, second_vector))
 
 
 def solve(line):
