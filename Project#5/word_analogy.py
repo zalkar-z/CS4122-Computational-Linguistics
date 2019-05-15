@@ -55,11 +55,9 @@ def normalize_vectors(words):
 #
 def vector_distance(type, first_vector, second_vector):
     if type == 0:
-        print("*")
         # Euclidean distance
         return numpy.linalg.norm(first_vector - second_vector)
     elif type == 1:
-        print("-")
         # Manhattan distance
         return numpy.sum(numpy.abs(first_vector - second_vector))
     else:
@@ -140,7 +138,7 @@ def main():
         with open(input_filepath, 'r') as input_file:
             with open(output_filepath, 'w') as output_file:
                 for line in input_file.readlines():
-                    output_file.write(solve(line))
+                    output_file.write(line)
 
     # use external function to write the evaluation of directory
     evaluate(input_directory, output_directory, eval_file)
