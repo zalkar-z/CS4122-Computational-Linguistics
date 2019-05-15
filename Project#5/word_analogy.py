@@ -74,10 +74,7 @@ def vector_distance(distance_type, first_vector, second_vector):
         return numpy.sum(numpy.abs(second_vector - first_vector))
     if distance_type == 2:
         # Cosine distance
-        if int(should_normalize) == 0:
-            return 1 - (numpy.dot(first_vector, second_vector) / (magnitude_of_vector(first_vector) * magnitude_of_vector(second_vector)))
-        else:
-            return 1 - (numpy.dot(first_vector, second_vector))
+        return 1 - (numpy.dot(first_vector, second_vector))
 
 
 def solve(line):
