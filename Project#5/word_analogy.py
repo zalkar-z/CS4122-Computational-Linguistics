@@ -53,20 +53,24 @@ def normalize_vectors(words):
 # Function: Returns distance of a given type.
 # Return:   Returns distance of a given type.
 #
-def vector_distance(type, first_vector, second_vector):
-    if type == 0:
+def vector_distance(distance_type, first_vector, second_vector):
+    # converting string to int
+    distance_type = int(distance_type)
+
+    # handling all distance types
+    if distance_type == 0:
         # Euclidean distance
-        return numpy.linalg.norm(first_vector - second_vector)
-    elif type == 1:
+        return numpy.sum(numpy.square(first_vector - second_vector))
+    if distance_type == 1:
         # Manhattan distance
         return numpy.sum(numpy.abs(first_vector - second_vector))
-    else:
+    if distance_type == 2:
         # Cosine distance
         temp = numpy.sqrt(numpy.dot(first_vector, first_vector)) * numpy.sqrt(numpy.dot(second_vector, second_vector))
         # handling division by zero
         if temp == 0:
             temp = 1.0
-        return 2 - numpy.dot(first_vector, second_vector) / temp
+        return 1 - numpy.dot(first_vector, second_vector) / temp
 
 
 def solve(line):
@@ -80,7 +84,7 @@ def solve(line):
             vectors[word] = numpy.zeros(300)
 
     # handling normalization
-    if should_normalize:
+    if int(should_normalize):
         normalize_vectors(words)
 
     # handling vector addition and subtraction
@@ -105,9 +109,6 @@ def main():
 
     # timer starts
     start = time.time()
-
-    print(should_normalize)
-    print(similarity_type)
 
     # Step:1 - reading vectors
     with open(vector_file, 'r') as open_file:
@@ -138,7 +139,7 @@ def main():
         with open(input_filepath, 'r') as input_file:
             with open(output_filepath, 'w') as output_file:
                 for line in input_file.readlines():
-                    output_file.write(line)
+                    output_file.write(solve(line))
 
     # use external function to write the evaluation of directory
     evaluate(input_directory, output_directory, eval_file)
