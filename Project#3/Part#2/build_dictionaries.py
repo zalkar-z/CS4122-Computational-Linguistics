@@ -5,19 +5,17 @@
 # Date Created: 05/25/2019
 #
 
-import sys
-import math
-import random
-
-input_file = sys.argv[1]
-output_file = sys.argv[2]
+bigram_dict = {}
+def build_bigram_dict(filename):
 
 
+trigram_dict = {}
+def build_trigram_dict(filename):
 
 
-
-def main():
-
+def main(filename):
+    build_bigram_dict(filename)
+    build_trigram_dict(filename)
 
 
 if __name__ == "__main__":
