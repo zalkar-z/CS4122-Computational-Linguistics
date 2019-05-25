@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff0b9df8-16cc-4c93-9480-379c325cf400" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/dickens_generated.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/dickens_model.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputTexts/austen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputTexts/conandoyle.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputTexts/dickens_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputTexts/dickens_training.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputTexts/shakespeare.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_ngram_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ngram_output.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,38 +52,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build_ngram_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="220" column="24" lean-forward="true" selection-start-line="220" selection-start-column="24" selection-end-line="220" selection-end-column="24" />
-              <folding>
-                <element signature="e#168#178#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngram_output.txt">
-          <provider selected="true" editor-type-id="LargeFileEditor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/generate_from_ngram.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#168#178#0" expanded="true" />
-                <marker date="1558816785932" expanded="true" signature="273:277" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -217,7 +195,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20089285" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -280,9 +257,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ngram_output.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/build_ngram_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
@@ -293,10 +267,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ngram_output.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/generate_from_ngram.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#168#178#0" expanded="true" />
             <marker date="1558816785932" expanded="true" signature="273:277" ph="..." />
