@@ -17,6 +17,39 @@ input_f = "input.txt"
 output_f = "output.txt"
 
 
+def get_random_bigram(unigram_dict):
+    sum = 0
+    random_number = random.random()
+
+    for word in unigram_dict:
+        sum += unigram_dict[word]
+
+        if sum > random_number:
+            return word
+
+
+def generate_unigrams(unigram_dict, number_of_sentences):
+    result = ''
+
+    for i in range(number_of_sentences):
+        current_sentence = '<s>'
+
+        while True:
+            current_bigram = get_random_bigram(unigram_dict)
+
+            if current_bigram == '<s>':
+                continue
+
+            current_sentence += ' ' + current_bigram
+
+            if current_bigram == '</s>':
+                break
+
+        result += (current_sentence + '\n')
+
+    return result
+
+
 def main():
     # convert an input to a list of strings, line by line
     with open(input_f, 'r', encoding='utf8') as input_file:
@@ -34,19 +67,19 @@ def main():
 
     with open(output_f, 'w', encoding='utf8') as output_file:
         # writing generated unigrams
-        output_file.write('Unigrams - 5 Randomly Generated Sentences \n')
-        output_file.write(generate_unigrams(ngrams, unigram_dict, unigram_index, bigram_index, 5))
+        output_file.write('Unigrams - 5 Randomly Generated Sentences \n\n')
+        output_file.write(generate_unigrams(unigram_dict, 5))
         output_file.write('\n')
 
-        # writing generated bigrams
-        output_file.write('Bigrams - 5 Randomly Generated Sentences \n')
-        output_file.write(generate_bigrams(ngrams, bigram_dict, bigram_index, trigram_index, 5))
-        output_file.write('\n')
-
-        # writing generated trigrams
-        output_file.write('Trigram - 5 Randomly Generated Sentences \n')
-        output_file.write(generate_trigrams(ngrams, trigram_dict, trigram_index, len(ngrams) - 1, 5))
-        output_file.write('\n')
+        # # writing generated bigrams
+        # output_file.write('Bigrams - 5 Randomly Generated Sentences \n')
+        # output_file.write(generate_bigrams(ngrams, bigram_dict, bigram_index, trigram_index, 5))
+        # output_file.write('\n')
+        #
+        # # writing generated trigrams
+        # output_file.write('Trigram - 5 Randomly Generated Sentences \n')
+        # output_file.write(generate_trigrams(ngrams, trigram_dict, trigram_index, len(ngrams) - 1, 5))
+        # output_file.write('\n')
 
 
 if __name__ == "__main__":
