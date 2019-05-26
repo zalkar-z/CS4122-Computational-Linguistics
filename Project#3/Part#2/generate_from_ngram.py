@@ -31,6 +31,9 @@ def main():
     bigram_dict = build_bigram_dict(ngrams, unigram_index, bigram_index)
     trigram_dict = build_trigram_dict(ngrams, bigram_index, trigram_index)
 
+    print(bigram_dict)
+    print(trigram_dict)
+
 
 if __name__ == "__main__":
     main()

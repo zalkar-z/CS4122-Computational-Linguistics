@@ -6,14 +6,11 @@
 #
 
 
-def build_bigram_dict(filename):
-    bigram_dict = {}
-
-
+def build_bigram_dict(ngram_list, start, end):
+    bigram_dict = {1: 1}
     return bigram_dict
 
-def build_trigram_dict(filename):
-    trigram_dict = {}
 
-
+def build_trigram_dict(ngram_list, start, end):
+    trigram_dict = {1: 1}
     return trigram_dict
