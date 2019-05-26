@@ -9,12 +9,8 @@ import sys
 import random
 from build_dictionaries import build_bigram_dict, build_trigram_dict, build_unigram_dict
 
-# input_file = sys.argv[1]
-# output_file = sys.argv[2]
-
-# temporary alternative
-input_f = "input.txt"
-output_f = "output.txt"
+input_f = sys.argv[1]
+output_f = sys.argv[2]
 
 
 def get_random_word(dict):
