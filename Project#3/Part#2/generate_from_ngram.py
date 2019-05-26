@@ -19,7 +19,7 @@ output_f = "output.txt"
 
 def main():
     # convert an input to a list of strings, line by line
-    with open(input_f, 'r', encoding="utf8") as input_file:
+    with open(input_f, 'r', encoding='utf8') as input_file:
         ngrams = input_file.read().splitlines() # reads the whole file and splits it into distinct lines in string form
 
     # getting the starting positions of each ngram type
@@ -27,12 +27,26 @@ def main():
     bigram_index = ngrams.index('\\2-grams:')
     trigram_index = ngrams.index('\\3-grams:')
 
-    # building bigram and trigram dictionaries
+    # building dictionaries for all ngrams
+    unigram_dict = build_unigram_dict(ngrams, unigram_index, bigram_index)
     bigram_dict = build_bigram_dict(ngrams, bigram_index, trigram_index)
     trigram_dict = build_trigram_dict(ngrams, trigram_index, len(ngrams) - 1)
 
-    # print(bigram_dict)
-    print(trigram_dict)
+    with open(output_f, 'w', encoding='utf8') as output_file:
+        # writing generated unigrams
+        output_file.write('Unigrams - 5 Randomly Generated Sentences \n')
+        output_file.write(generate_unigrams(ngrams, unigram_dict, unigram_index, bigram_index, 5))
+        output_file.write('\n')
+
+        # writing generated bigrams
+        output_file.write('Bigrams - 5 Randomly Generated Sentences \n')
+        output_file.write(generate_bigrams(ngrams, bigram_dict, bigram_index, trigram_index, 5))
+        output_file.write('\n')
+
+        # writing generated trigrams
+        output_file.write('Trigram - 5 Randomly Generated Sentences \n')
+        output_file.write(generate_trigrams(ngrams, trigram_dict, trigram_index, len(ngrams) - 1, 5))
+        output_file.write('\n')
 
 
 if __name__ == "__main__":
