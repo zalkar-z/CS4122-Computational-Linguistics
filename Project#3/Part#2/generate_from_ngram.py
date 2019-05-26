@@ -28,8 +28,8 @@ def main():
     trigram_index = ngrams.index('\\3-grams:')
 
     # building bigram and trigram dictionaries
-    bigram_dict = build_bigram_dict(ngrams, unigram_index, bigram_index)
-    trigram_dict = build_trigram_dict(ngrams, bigram_index, trigram_index)
+    bigram_dict = build_bigram_dict(ngrams, bigram_index, trigram_index)
+    trigram_dict = build_trigram_dict(ngrams, trigram_index, len(ngrams) - 1)
 
     print(bigram_dict)
     print(trigram_dict)
