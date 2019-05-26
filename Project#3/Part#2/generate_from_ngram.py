@@ -17,12 +17,12 @@ input_f = "input.txt"
 output_f = "output.txt"
 
 
-def get_random_bigram(unigram_dict):
+def get_random_word(dict):
     sum = 0
     random_number = random.random()
 
-    for word in unigram_dict:
-        sum += unigram_dict[word]
+    for word in dict:
+        sum += dict[word]
 
         if sum > random_number:
             return word
@@ -35,7 +35,7 @@ def generate_unigrams(unigram_dict, number_of_sentences):
         current_sentence = '<s>'
 
         while True:
-            current_bigram = get_random_bigram(unigram_dict)
+            current_bigram = get_random_word(unigram_dict)
 
             if current_bigram == '<s>':
                 continue
@@ -43,6 +43,30 @@ def generate_unigrams(unigram_dict, number_of_sentences):
             current_sentence += ' ' + current_bigram
 
             if current_bigram == '</s>':
+                break
+
+        result += (current_sentence + '\n')
+
+    return result
+
+
+def generate_bigrams(bigram_dict, number_of_sentences):
+    result = ''
+
+    for i in range(number_of_sentences):
+        current_sentence = '<s>'
+        last_word = '<s>'
+
+        while True:
+            current_word = get_random_word(bigram_dict[last_word])
+
+            if current_word == '<s>':
+                continue
+
+            current_sentence += ' ' + current_word
+            last_word = current_word
+
+            if current_word == '</s>':
                 break
 
         result += (current_sentence + '\n')
@@ -71,10 +95,10 @@ def main():
         output_file.write(generate_unigrams(unigram_dict, 5))
         output_file.write('\n')
 
-        # # writing generated bigrams
-        # output_file.write('Bigrams - 5 Randomly Generated Sentences \n')
-        # output_file.write(generate_bigrams(ngrams, bigram_dict, bigram_index, trigram_index, 5))
-        # output_file.write('\n')
+        # writing generated bigrams
+        output_file.write('Bigrams - 5 Randomly Generated Sentences \n\n')
+        output_file.write(generate_bigrams(bigram_dict, 5))
+        output_file.write('\n')
         #
         # # writing generated trigrams
         # output_file.write('Trigram - 5 Randomly Generated Sentences \n')
