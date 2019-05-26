@@ -6,6 +6,20 @@
 #
 
 
+def build_unigram_dict(ngram_list, start, end):
+    unigram_dict = {}
+
+    for line in ngram_list[start + 1: end - 1]:
+        current_list = line.split()
+
+        unigram = current_list[3]
+        probability = current_list[1]
+
+        unigram_dict[unigram] = probability
+
+    return unigram_dict
+
+
 def build_bigram_dict(ngram_list, start, end):
     bigram_dict = {}
 

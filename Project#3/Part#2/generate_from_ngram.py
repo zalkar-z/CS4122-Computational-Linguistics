@@ -7,7 +7,7 @@
 
 import sys
 import random
-from build_dictionaries import build_bigram_dict, build_trigram_dict
+from build_dictionaries import build_bigram_dict, build_trigram_dict, build_unigram_dict
 
 # input_file = sys.argv[1]
 # output_file = sys.argv[2]
@@ -32,21 +32,23 @@ def main():
     bigram_dict = build_bigram_dict(ngrams, bigram_index, trigram_index)
     trigram_dict = build_trigram_dict(ngrams, trigram_index, len(ngrams) - 1)
 
-    with open(output_f, 'w', encoding='utf8') as output_file:
-        # writing generated unigrams
-        output_file.write('Unigrams - 5 Randomly Generated Sentences \n')
-        output_file.write(generate_unigrams(ngrams, unigram_dict, unigram_index, bigram_index, 5))
-        output_file.write('\n')
+    print(unigram_dict)
 
-        # writing generated bigrams
-        output_file.write('Bigrams - 5 Randomly Generated Sentences \n')
-        output_file.write(generate_bigrams(ngrams, bigram_dict, bigram_index, trigram_index, 5))
-        output_file.write('\n')
-
-        # writing generated trigrams
-        output_file.write('Trigram - 5 Randomly Generated Sentences \n')
-        output_file.write(generate_trigrams(ngrams, trigram_dict, trigram_index, len(ngrams) - 1, 5))
-        output_file.write('\n')
+    # with open(output_f, 'w', encoding='utf8') as output_file:
+    #     # writing generated unigrams
+    #     output_file.write('Unigrams - 5 Randomly Generated Sentences \n')
+    #     output_file.write(generate_unigrams(ngrams, unigram_dict, unigram_index, bigram_index, 5))
+    #     output_file.write('\n')
+    #
+    #     # writing generated bigrams
+    #     output_file.write('Bigrams - 5 Randomly Generated Sentences \n')
+    #     output_file.write(generate_bigrams(ngrams, bigram_dict, bigram_index, trigram_index, 5))
+    #     output_file.write('\n')
+    #
+    #     # writing generated trigrams
+    #     output_file.write('Trigram - 5 Randomly Generated Sentences \n')
+    #     output_file.write(generate_trigrams(ngrams, trigram_dict, trigram_index, len(ngrams) - 1, 5))
+    #     output_file.write('\n')
 
 
 if __name__ == "__main__":
