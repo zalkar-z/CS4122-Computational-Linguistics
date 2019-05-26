@@ -25,5 +25,18 @@ def build_bigram_dict(ngram_list, start, end):
 
 
 def build_trigram_dict(ngram_list, start, end):
-    trigram_dict = {1: 1}
+    trigram_dict = {}
+
+    for line in ngram_list[start + 1: end - 1]:
+        current_list = line.split()
+
+        bigram = current_list[3] + ' ' + current_list[4]
+        last_word = current_list[5]
+        probability = current_list[1]
+
+        if bigram not in trigram_dict:
+            trigram_dict[bigram] = {last_word: probability}
+        else:
+            trigram_dict[bigram][last_word] = probability
+
     return trigram_dict

@@ -33,38 +33,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1294" />
+          <entry key="py" value="1493" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1294" />
+          <entry key="Python" value="1493" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Part#2/build_dictionaries.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="393">
+              <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding>
-                <marker date="1558844199864" expanded="true" signature="215:647" ph="..." />
-                <marker date="1558844199864" expanded="true" signature="694:745" ph="..." />
+                <marker date="1558844425249" expanded="true" signature="215:647" ph="..." />
+                <marker date="1558844425249" expanded="true" signature="694:1131" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Part#2/generate_from_ngram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+            <state relative-caret-position="461">
+              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
               <folding>
-                <marker date="1558843770836" expanded="true" signature="402:1087" ph="..." />
+                <marker date="1558844450220" expanded="true" signature="402:1089" ph="..." />
               </folding>
             </state>
           </provider>
@@ -97,8 +97,8 @@
       <list>
         <option value="$PROJECT_DIR$/build_ngram_model.py" />
         <option value="$PROJECT_DIR$/generate_from_ngram.py" />
-        <option value="$PROJECT_DIR$/Part#2/generate_from_ngram.py" />
         <option value="$PROJECT_DIR$/Part#2/build_dictionaries.py" />
+        <option value="$PROJECT_DIR$/Part#2/generate_from_ngram.py" />
       </list>
     </option>
   </component>
@@ -340,23 +340,23 @@
     <entry file="file://$PROJECT_DIR$/Part#2/input.txt">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Part#2/generate_from_ngram.py">
+    <entry file="file://$PROJECT_DIR$/Part#2/build_dictionaries.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
           <folding>
-            <marker date="1558843770836" expanded="true" signature="402:1087" ph="..." />
+            <marker date="1558844425249" expanded="true" signature="215:647" ph="..." />
+            <marker date="1558844425249" expanded="true" signature="694:1131" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Part#2/build_dictionaries.py">
+    <entry file="file://$PROJECT_DIR$/Part#2/generate_from_ngram.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="461">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
           <folding>
-            <marker date="1558844199864" expanded="true" signature="215:647" ph="..." />
-            <marker date="1558844199864" expanded="true" signature="694:745" ph="..." />
+            <marker date="1558844450220" expanded="true" signature="402:1089" ph="..." />
           </folding>
         </state>
       </provider>
