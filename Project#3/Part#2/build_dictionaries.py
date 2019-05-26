@@ -13,7 +13,7 @@ def build_unigram_dict(ngram_list, start, end):
         current_list = line.split()
 
         unigram = current_list[3]
-        probability = current_list[1]
+        probability = float(current_list[1])
 
         unigram_dict[unigram] = probability
 
@@ -28,7 +28,7 @@ def build_bigram_dict(ngram_list, start, end):
 
         first_word = current_list[3]
         second_word = current_list[4]
-        probability = current_list[1]
+        probability = float(current_list[1])
 
         if first_word not in bigram_dict:
             bigram_dict[first_word] = {second_word: probability}
@@ -46,7 +46,7 @@ def build_trigram_dict(ngram_list, start, end):
 
         bigram = current_list[3] + ' ' + current_list[4]
         last_word = current_list[5]
-        probability = current_list[1]
+        probability = float(current_list[1])
 
         if bigram not in trigram_dict:
             trigram_dict[bigram] = {last_word: probability}
