@@ -5,18 +5,15 @@
 # Date Created: 05/25/2019
 #
 
-bigram_dict = {}
+
 def build_bigram_dict(filename):
+    bigram_dict = {}
 
 
-trigram_dict = {}
+    return bigram_dict
+
 def build_trigram_dict(filename):
+    trigram_dict = {}
 
 
-def main(filename):
-    build_bigram_dict(filename)
-    build_trigram_dict(filename)
-
-
-if __name__ == "__main__":
-    main()
+    return trigram_dict

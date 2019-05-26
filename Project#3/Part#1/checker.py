@@ -2,7 +2,7 @@
 #
 
 
-first = "ngram_output.txt"
+first = "input.txt"
 second = "Examples/dickens_model.txt"
 
 out = "check_out.txt"
