@@ -1,1 +1,1 @@
-# Computational_Linguistics
+# CS 4122: Computational Linguistics
